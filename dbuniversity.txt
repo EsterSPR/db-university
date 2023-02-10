@@ -24,3 +24,6 @@ WHERE `date` LIKE '2020-06-20' and `hour` > ’13:59:59';
 SELECT *
 FROM `degrees`
 WHERE `level` LIKE ‘magistrale';
+
+SELECT COUNT (*) AS `totale_dipartimenti`
+FROM `departments`;
