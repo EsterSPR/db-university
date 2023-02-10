@@ -12,3 +12,7 @@ WHERE `cfu` > 10;
 SELECT *
 FROM `students`
 WHERE `date_of_birth` NOT BETWEEN '1993-02-11' and ‘2023-02-10';
+
+SELECT *
+FROM `courses`
+WHERE `period` LIKE 'I semestre' and `year` LIKE ‘1';
