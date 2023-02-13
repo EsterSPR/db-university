@@ -13,3 +13,8 @@ SELECT AVG(`vote`) AS avg_grade, `exam_id`
 FROM `exam_student`
 GROUP BY `exam_id`;
 
+SELECT COUNT(*) AS count_degree,
+`department_id` AS count_department
+FROM `degrees`
+GROUP BY count_department;
+
