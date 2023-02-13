@@ -34,4 +34,11 @@ FROM `courses`
 INNER JOIN `course_teacher`
 WHERE `teacher_id` = '44';
 
+///
 
+///
+
+SELECT `teachers`.`id`, `teachers`.`name`,`teachers`.`surname`
+FROM `teachers`
+INNER JOIN `departments`
+WHERE `departments`.`name` = 'Dipartimento di Matematica';
