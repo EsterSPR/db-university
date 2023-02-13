@@ -9,3 +9,7 @@ SELECT COUNT(*) AS teachers_tgt, `office_address` as office_tgt
 FROM `teachers`
 GROUP BY office_tgt;
 
+SELECT AVG(`vote`) AS avg_grade, `exam_id`
+FROM `exam_student`
+GROUP BY `exam_id`;
+
