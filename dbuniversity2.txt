@@ -23,3 +23,10 @@ SELECT `students`.`id`, `students`.`name`,`students`.`surname`
 FROM `students`
 INNER JOIN `degrees`
 WHERE `degrees`.`name` = 'Corso di laurea in economia';
+
+SELECT `degrees`.`id`, `degrees`.`name`
+FROM `degrees`
+INNER JOIN `departments`
+WHERE `degrees`.`level` = 'magistrale' AND `departments`.`name` = 'Dipartimento di Neuroscienze';
+
+
