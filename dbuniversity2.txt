@@ -18,3 +18,8 @@ SELECT COUNT(*) AS count_degree,
 FROM `degrees`
 GROUP BY count_department;
 
+
+SELECT `students`.`id`, `students`.`name`,`students`.`surname`
+FROM `students`
+INNER JOIN `degrees`
+WHERE `degrees`.`name` = 'Corso di laurea in economia';
