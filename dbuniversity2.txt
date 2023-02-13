@@ -1,6 +1,11 @@
 DB UNIVERSITY 2
 
+
 SELECT COUNT(*) AS students_enrolled, YEAR(`enrolment_date`) as year_enrolled
 FROM `students`
 GROUP BY year_enrolled;
+
+SELECT COUNT(*) AS teachers_tgt, `office_address` as office_tgt
+FROM `teachers`
+GROUP BY office_tgt;
 
