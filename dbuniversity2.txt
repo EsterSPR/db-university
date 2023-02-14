@@ -34,7 +34,11 @@ FROM `courses`
 INNER JOIN `course_teacher`
 WHERE `teacher_id` = '44';
 
-///
+SELECT `students`.`surname`, `students`.`name`,`degrees`.`name`,`departments`.`name`
+FROM `students`
+JOIN `degrees` ON `students`.`degree_id`=`degrees`.`id`
+JOIN `departments` ON `degrees`.`department_id`=`departments`.`id`
+ORDER BY `students`.`surname`, `students`.`name`
 
 ///
 
